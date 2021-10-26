@@ -10,6 +10,13 @@ while (name != "Mega Charizard X" && name != "Mega Charizard Y")
     name = Console.ReadLine();
 }
 
+
+int hpXform = 100;
+int hpYform = 100; 
+
+
+while (hpXform > 0 && hpYform > 0)
+{
 if (name == "Mega Charizard X")
 {
     Console.WriteLine("What Will Mega Charizard X do?");
@@ -17,6 +24,9 @@ if (name == "Mega Charizard X")
     Console.WriteLine("Dragon Claw");
     Console.WriteLine("Thunder Punch");
     Console.WriteLine("Blast Burn");
+    string action = Console.ReadLine();
+    
+
 }
 
 else
@@ -28,12 +38,30 @@ else
     Console.WriteLine("Dragon Tail");
 }
 
-int hpXform = 100;
-int hpYform = 100; 
 
-while (hpXform > 0 && hpYform > 0)
+
+Console.ReadLine(); 
+}
+
+if (action == "flamethrower")
 {
-    
+    Console.WriteLine("It's not very effective"); 
+    name = Console.ReadLine();
+    hpYform -= 10; 
+}
+
+else if (name == "Fire spin")
+{
+Console.WriteLine("It's not very effective the oppesing Mega Charizard was trapped in a vortex");
+name = Console.ReadLine();
+hpXform -= 5;
+}
+
+else if (name == "Thunder punch")
+{
+Console.WriteLine("It's super effective");
+name = Console.ReadLine();
+hpYform = -90;
 }
 
 Console.ReadLine();
