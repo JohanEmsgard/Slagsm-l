@@ -19,7 +19,7 @@ if (name == "Mega Charizard X")
     Console.WriteLine("Blast Burn");
 }
 
-else 
+else
 {
     Console.WriteLine("What Will Mega Charizard Y do?");
     Console.WriteLine("Fire Spin");
@@ -27,4 +27,13 @@ else
     Console.WriteLine("Heat Wave");
     Console.WriteLine("Dragon Tail");
 }
+
+int hpXform = 100;
+int hpYform = 100; 
+
+while (hpXform > 0 && hpYform > 0)
+{
+    
+}
+
 Console.ReadLine();
