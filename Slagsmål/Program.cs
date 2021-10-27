@@ -75,7 +75,6 @@ else if (hpXform <= 0)
         Console.WriteLine("Heat Wave");
         Console.WriteLine("Dragon Tail");
         attack = Console.ReadLine();
-
     }
 
     if (attack == "Fire Spin")
@@ -107,6 +106,16 @@ else if (hpXform <= 0)
     }
 
     Console.ReadLine();
+}
+
+if (hpYform <= 0)
+{
+    Console.WriteLine("Mega Charizard X Wins");
+}
+
+else 
+{
+    Console.WriteLine("Mega Charizard Y Wins");
 }
 
 Console.ReadLine();
