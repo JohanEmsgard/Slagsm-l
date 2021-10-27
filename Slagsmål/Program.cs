@@ -4,6 +4,7 @@ Console.WriteLine("Mega charizard X vs Mega Charizard Y");
 Console.ReadLine();
 
 string name = "";
+string attack = "";
 while (name != "Mega Charizard X" && name != "Mega Charizard Y")
 {
     Console.WriteLine("Chose your Figher, Mega Charizard X or Mega Charizard Y");
@@ -24,9 +25,15 @@ if (name == "Mega Charizard X")
     Console.WriteLine("Dragon Claw");
     Console.WriteLine("Thunder Punch");
     Console.WriteLine("Blast Burn");
-    string action = Console.ReadLine();
+    attack = Console.ReadLine();
     
 
+}
+if ( attack == "flamethrower")
+{
+    Console.WriteLine("It's not very effective"); 
+    attack = Console.ReadLine();
+    hpYform -= 10; 
 }
 
 else
@@ -39,29 +46,6 @@ else
 }
 
 
-
 Console.ReadLine(); 
 }
 
-if (action == "flamethrower")
-{
-    Console.WriteLine("It's not very effective"); 
-    name = Console.ReadLine();
-    hpYform -= 10; 
-}
-
-else if (name == "Fire spin")
-{
-Console.WriteLine("It's not very effective the oppesing Mega Charizard was trapped in a vortex");
-name = Console.ReadLine();
-hpXform -= 5;
-}
-
-else if (name == "Thunder punch")
-{
-Console.WriteLine("It's super effective");
-name = Console.ReadLine();
-hpYform = -90;
-}
-
-Console.ReadLine();
