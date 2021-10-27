@@ -36,6 +36,29 @@ if ( attack == "flamethrower")
     hpYform -= 10; 
 }
 
+else if (attack == "Thunder Punch")
+{
+    Console.WriteLine("It's Super effective");
+    attack = Console.ReadLine();
+    hpYform -=80;
+}
+
+else if (attack == "Dragon Claw")
+{
+    Console.WriteLine();
+    attack = Console.ReadLine();
+    hpYform -=40;
+}
+
+else if (attack == "Blast Burn")
+{
+    Console.WriteLine("It's not very effective");
+    attack = Console.ReadLine();
+    hpYform -=30;
+    Console.WriteLine("Mega Charizard X must recharge");
+}
+
+
 else
 {
     Console.WriteLine("What Will Mega Charizard Y do?");
@@ -49,3 +72,5 @@ else
 Console.ReadLine(); 
 }
 
+
+Console.ReadLine();
