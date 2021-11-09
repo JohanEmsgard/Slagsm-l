@@ -57,15 +57,7 @@ while (hpXform > 0 && hpYform > 0)
         Console.WriteLine("Mega Charizard X must recharge");
     }
 
-    if (hpYform <= 0)
-    {
-        Console.WriteLine("The Oppesing Mega Charizard Y fainted");
-    }
-
-    else if (hpXform <= 0)
-    {
-        Console.WriteLine("Mega Charizard X fainted");
-    }
+    
 
     else if (name == "Mega Charizard Y")
     {
@@ -82,6 +74,7 @@ while (hpXform > 0 && hpYform > 0)
         Console.WriteLine("It's not very effective");
         attack = Console.ReadLine();
         hpXform -= 10;
+        Console.WriteLine("The Oppessing Mega Charizard X was trapped in a Vortex");
     }
 
     else if (attack == "Dragon Claw")
@@ -108,14 +101,18 @@ while (hpXform > 0 && hpYform > 0)
     Console.ReadLine();
 }
 
+
 if (hpYform <= 0)
 {
+    Console.WriteLine("Mega Charizard Y Fainted");
     Console.WriteLine("Mega Charizard X Wins");
 }
 
 else
 {
+    Console.WriteLine("Mega Charizard X Fainted");
     Console.WriteLine("Mega Charizard Y Wins");
 }
+
 
 Console.ReadLine();
