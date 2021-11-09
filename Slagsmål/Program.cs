@@ -28,7 +28,7 @@ while (hpXform > 0 && hpYform > 0)
         attack = Console.ReadLine();
     }
 
-    if (attack == "flamethrower")
+    if (attack == "Flamethrower")
     {
         Console.WriteLine("It's not very effective");
         attack = Console.ReadLine();
@@ -58,14 +58,14 @@ while (hpXform > 0 && hpYform > 0)
     }
 
     if (hpYform <= 0)
-{
-    Console.WriteLine("The Oppesing Mega Charizard Y fainted");
-}
+    {
+        Console.WriteLine("The Oppesing Mega Charizard Y fainted");
+    }
 
-else if (hpXform <= 0)
-{
-    Console.WriteLine("Mega Charizard X fainted");
-}
+    else if (hpXform <= 0)
+    {
+        Console.WriteLine("Mega Charizard X fainted");
+    }
 
     else if (name == "Mega Charizard Y")
     {
@@ -113,7 +113,7 @@ if (hpYform <= 0)
     Console.WriteLine("Mega Charizard X Wins");
 }
 
-else 
+else
 {
     Console.WriteLine("Mega Charizard Y Wins");
 }
