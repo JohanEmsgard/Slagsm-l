@@ -5,7 +5,7 @@ Console.ReadLine();
 
 string name = "";
 string attack = "";
-while (name != "Mega Charizard X" && name != "Mega Charizard Y")
+while (name != "X" && name != "Y")
 {
     Console.WriteLine("Chose your Figher, Mega Charizard X or Mega Charizard Y");
     name = Console.ReadLine();
@@ -18,38 +18,38 @@ int hpYform = 100;
 
 while (hpXform > 0 && hpYform > 0)
 {
-    if (name == "Mega Charizard X")
+    if (name == "X")
     {
         Console.WriteLine("What Will Mega Charizard X do?");
-        Console.WriteLine("Flamethrower");
-        Console.WriteLine("Dragon Claw");
-        Console.WriteLine("Thunder Punch");
-        Console.WriteLine("Blast Burn");
+        Console.WriteLine("1) Flamethrower");
+        Console.WriteLine("2) Dragon Claw");
+        Console.WriteLine("3) Thunder Punch");
+        Console.WriteLine("4) Blast Burn");
         attack = Console.ReadLine();
     }
 
-    if (attack == "Flamethrower")
+    if (attack == "1")
     {
         Console.WriteLine("It's not very effective");
         attack = Console.ReadLine();
         hpYform -= 10;
     }
 
-    else if (attack == "Thunder Punch")
+    else if (attack == "3")
     {
         Console.WriteLine("It's Super effective");
         attack = Console.ReadLine();
         hpYform -= 80;
     }
 
-    else if (attack == "Dragon Claw")
+    else if (attack == "2")
     {
         Console.WriteLine();
         attack = Console.ReadLine();
         hpYform -= 40;
     }
 
-    else if (attack == "Blast Burn")
+    else if (attack == "4")
     {
         Console.WriteLine("It's not very effective");
         attack = Console.ReadLine();
@@ -59,17 +59,17 @@ while (hpXform > 0 && hpYform > 0)
 
     
 
-    else if (name == "Mega Charizard Y")
+    else if (name == "Y")
     {
         Console.WriteLine("What Will Mega Charizard Y do?");
-        Console.WriteLine("Fire Spin");
-        Console.WriteLine("Dragon Claw");
-        Console.WriteLine("Heat Wave");
-        Console.WriteLine("Dragon Tail");
+        Console.WriteLine("1) Fire Spin");
+        Console.WriteLine("2) Dragon Claw");
+        Console.WriteLine("3) Heat Wave");
+        Console.WriteLine("4) Dragon Tail");
         attack = Console.ReadLine();
     }
 
-    if (attack == "Fire Spin")
+    if (attack == "1")
     {
         Console.WriteLine("It's not very effective");
         attack = Console.ReadLine();
@@ -77,21 +77,21 @@ while (hpXform > 0 && hpYform > 0)
         Console.WriteLine("The Oppessing Mega Charizard X was trapped in a Vortex");
     }
 
-    else if (attack == "Dragon Claw")
+    else if (attack == "2")
     {
         Console.WriteLine("It's Super effective");
         attack = Console.ReadLine();
         hpXform -= 50;
     }
 
-    else if (attack == "Heat Wave")
+    else if (attack == "3")
     {
         Console.WriteLine("It's not very effective");
         attack = Console.ReadLine();
         hpXform -= 30;
     }
 
-    else if (attack == "Dragon Tail")
+    else if (attack == "4")
     {
         Console.WriteLine("It's super effective");
         attack = Console.ReadLine();
@@ -105,12 +105,14 @@ while (hpXform > 0 && hpYform > 0)
 if (hpYform <= 0)
 {
     Console.WriteLine("Mega Charizard Y Fainted");
+    Console.ReadLine();
     Console.WriteLine("Mega Charizard X Wins");
 }
 
 else
 {
     Console.WriteLine("Mega Charizard X Fainted");
+    Console.ReadLine();
     Console.WriteLine("Mega Charizard Y Wins");
 }
 
