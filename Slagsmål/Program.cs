@@ -57,24 +57,24 @@ while (hpXform > 0 && hpYform > 0)
             Console.WriteLine("Mega Charizard X must recharge");
         }
 
-        int enemyAction = generator.Next(4);
-        if (enemyAction == 0)
+        int enemyActionY = generator.Next(4);
+        if (enemyActionY == 0)
         {
             Console.WriteLine("Mega Charizard Y used Fire Spin");
             hpXform -= 10;
         } 
 
-        else if (enemyAction == 1)
+        else if (enemyActionY == 1)
         {
             Console.WriteLine("Mega Charizard Y used Dragon Claw");
             hpXform -= 50;
         }
-        else if (enemyAction ==2)
+        else if (enemyActionY ==2)
         {
             Console.WriteLine("Mega Charizard Y used Heat Wave");
             hpXform -= 30;
         }
-        else if (enemyAction ==3)
+        else if (enemyActionY ==3)
         {
             Console.WriteLine("Mega Charizard Y used Dragon Tail");
             hpXform -= 45;
@@ -122,28 +122,28 @@ while (hpXform > 0 && hpYform > 0)
         hpXform -= 45;
     }
 
-    int enemyAction = generator.Next(4);
-    if (enemyAction == 0)
+    int enemyActionX = generator.Next(4);
+    if (enemyActionX == 0)
 
-    if (enemyAction ==0)
+    if (enemyActionX ==0)
     {
         Console.WriteLine("Mega Charizard X used Flamethrower");
         hpYform -=10;
     }
 
-    else if (enemyAction ==1)
+    else if (enemyActionX ==1)
     {
         Console.WriteLine("Mega Charizard X used Dragon Claw");
         hpYform -= 40;
     }
 
-    else if (enemyAction ==2)
+    else if (enemyActionX ==2)
     {
         Console.WriteLine("Mega Charizard X used Thunder Punch");
         hpYform -= 80;
     }
 
-    else if (enemyAction ==3)
+    else if (enemyActionX ==3)
     {
         Console.WriteLine("Mega Charizard X used Blast Burn");
         hpYform -= 30;
