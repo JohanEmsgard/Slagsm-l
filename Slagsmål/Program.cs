@@ -123,8 +123,7 @@ while (hpXform > 0 && hpYform > 0)
     }
 
     int enemyActionX = generator.Next(4);
-    if (enemyActionX == 0)
-
+    
     if (enemyActionX ==0)
     {
         Console.WriteLine("Mega Charizard X used Flamethrower");
