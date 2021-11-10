@@ -64,31 +64,36 @@ while (hpXform > 0 && hpYform > 0)
             hpXform -= 10;
         } 
 
-        else 
+        else if (enemyAction == 1)
         {
             Console.WriteLine("Mega Charizard Y used Dragon Claw");
             hpXform -= 50;
-        }     
-
-        else
+        }
+        else if (enemyAction ==2)
         {
             Console.WriteLine("Mega Charizard Y used Heat Wave");
+            hpXform -= 30;
         }
-
+        else if (enemyAction ==3)
+        {
+            Console.WriteLine("Mega Charizard Y used Dragon Tail");
+            hpXform -= 45;
+        }
+        Console.ReadLine();
     }
 
 
     else if (name == "Y")
     {
         Console.WriteLine("What Will Mega Charizard Y do?");
-        Console.WriteLine("1) Fire Spin");
-        Console.WriteLine("2) Dragon Claw");
-        Console.WriteLine("3) Heat Wave");
-        Console.WriteLine("4) Dragon Tail");
+        Console.WriteLine("5) Fire Spin");
+        Console.WriteLine("6) Dragon Claw");
+        Console.WriteLine("7) Heat Wave");
+        Console.WriteLine("8) Dragon Tail");
         attack = Console.ReadLine();
     }
 
-    if (attack == "1")
+    if (attack == "5")
     {
         Console.WriteLine("It's not very effective");
         attack = Console.ReadLine();
@@ -96,26 +101,42 @@ while (hpXform > 0 && hpYform > 0)
         Console.WriteLine("The Oppessing Mega Charizard X was trapped in a Vortex");
     }
 
-    else if (attack == "2")
+    else if (attack == "6")
     {
         Console.WriteLine("It's Super effective");
         attack = Console.ReadLine();
         hpXform -= 50;
     }
 
-    else if (attack == "3")
+    else if (attack == "7")
     {
         Console.WriteLine("It's not very effective");
         attack = Console.ReadLine();
         hpXform -= 30;
     }
 
-    else if (attack == "4")
+    else if (attack == "8")
     {
         Console.WriteLine("It's super effective");
         attack = Console.ReadLine();
         hpXform -= 45;
     }
+
+    int enemyAction = generator.Next(4);
+    if (enemyAction == 0)
+
+    if (enemyAction ==0)
+    {
+        Console.WriteLine("Mega Charizard X used Flamethrower");
+        hpYform -=10;
+    }
+
+    else if (enemyAction ==1)
+    {
+        Console.WriteLine("Mega Charizard X used Dragon Claw");
+        hpXform -= 40;
+    }
+
 
     Console.ReadLine();
 }
