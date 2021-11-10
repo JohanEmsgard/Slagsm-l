@@ -16,8 +16,8 @@ int hpXform = 100;
 int hpYform = 100;
 
 Random generator = new Random();
-
 while (hpXform > 0 && hpYform > 0)
+
 {
     if (name == "X")
     {
@@ -83,6 +83,7 @@ while (hpXform > 0 && hpYform > 0)
     }
 
 
+
     else if (name == "Y")
     {
         Console.WriteLine("What Will Mega Charizard Y do?");
@@ -91,8 +92,6 @@ while (hpXform > 0 && hpYform > 0)
         Console.WriteLine("7) Heat Wave");
         Console.WriteLine("8) Dragon Tail");
         attack = Console.ReadLine();
-    }
-
     if (attack == "5")
     {
         Console.WriteLine("It's not very effective");
@@ -122,38 +121,37 @@ while (hpXform > 0 && hpYform > 0)
         hpXform -= 45;
     }
 
-    int enemyActionX = generator.Next(4);
-    
-    if (enemyActionX ==0)
+
+    int enemyActionX = generator.Next(5);
+    if (enemyActionX ==1)
     {
         Console.WriteLine("Mega Charizard X used Flamethrower");
         attack = Console.ReadLine();
         hpYform -=10;
     }
 
-    else if (enemyActionX ==1)
+    else if (enemyActionX ==2)
     {
         Console.WriteLine("Mega Charizard X used Dragon Claw");
         attack = Console.ReadLine();
         hpYform -= 40;
     }
 
-    else if (enemyActionX ==2)
+    else if (enemyActionX ==3)
     {
         Console.WriteLine("Mega Charizard X used Thunder Punch");
         attack = Console.ReadLine();
         hpYform -= 80;
     }
 
-    else if (enemyActionX ==3)
+    else if (enemyActionX ==4)
     {
         Console.WriteLine("Mega Charizard X used Blast Burn");
         attack = Console.ReadLine();
         hpYform -= 30;
     }
-
-
     Console.ReadLine();
+    }
 }
 
 
