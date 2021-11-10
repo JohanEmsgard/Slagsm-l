@@ -127,24 +127,28 @@ while (hpXform > 0 && hpYform > 0)
     if (enemyActionX ==0)
     {
         Console.WriteLine("Mega Charizard X used Flamethrower");
+        attack = Console.ReadLine();
         hpYform -=10;
     }
 
     else if (enemyActionX ==1)
     {
         Console.WriteLine("Mega Charizard X used Dragon Claw");
+        attack = Console.ReadLine();
         hpYform -= 40;
     }
 
     else if (enemyActionX ==2)
     {
         Console.WriteLine("Mega Charizard X used Thunder Punch");
+        attack = Console.ReadLine();
         hpYform -= 80;
     }
 
     else if (enemyActionX ==3)
     {
         Console.WriteLine("Mega Charizard X used Blast Burn");
+        attack = Console.ReadLine();
         hpYform -= 30;
     }
 
